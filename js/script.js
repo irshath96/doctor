@@ -1,20 +1,20 @@
 
 
 
-;(function ($) {
+; (function ($) {
 
 	'use strict';
-	
- // SCROLL TO TOP
-  
-  $(window).on('scroll', function () {
-    if ($(window).scrollTop() > 70) {
-        $('.backtop').addClass('reveal');
-    } else {
-        $('.backtop').removeClass('reveal');
-    }
-});
- 
+
+	// SCROLL TO TOP
+
+	$(window).on('scroll', function () {
+		if ($(window).scrollTop() > 70) {
+			$('.backtop').addClass('reveal');
+		} else {
+			$('.backtop').removeClass('reveal');
+		}
+	});
+
 	$('.portfolio-single-slider').slick({
 		infinite: true,
 		arrows: false,
@@ -31,37 +31,37 @@
 		slidesToScroll: 6,
 		autoplaySpeed: 6000,
 		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow:6,
-		        slidesToScroll: 6,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 900,
-		      settings: {
-		        slidesToShow:4,
-		        slidesToScroll: 4
-		      }
-		    },{
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 4,
-		        slidesToScroll: 4
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 2,
-		        slidesToScroll: 2
-		      }
-		    }
-		  
-  		]
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 6,
+					slidesToScroll: 6,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4
+				}
+			}, {
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 4,
+					slidesToScroll: 4
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			}
+
+		]
 	});
 
 	$('.testimonial-wrap').slick({
@@ -71,41 +71,41 @@
 		dots: true,
 		arrows: false,
 		autoplay: true,
-		vertical:true,
-		verticalSwiping:true,
+		vertical: true,
+		verticalSwiping: true,
 		autoplaySpeed: 6000,
 		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow:1,
-		        slidesToScroll: 1,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 900,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },{
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  
-  		]
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}, {
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+
+		]
 	});
 
 	$('.testimonial-wrap-2').slick({
@@ -113,41 +113,41 @@
 		slidesToScroll: 2,
 		infinite: true,
 		dots: true,
-		arrows:false,
+		arrows: false,
 		autoplay: true,
 		autoplaySpeed: 6000,
 		responsive: [
-		    {
-		      breakpoint: 1024,
-		      settings: {
-		        slidesToShow:2,
-		        slidesToScroll:2,
-		        infinite: true,
-		        dots: true
-		      }
-		    },
-		    {
-		      breakpoint: 900,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },{
-		      breakpoint: 600,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        slidesToShow: 1,
-		        slidesToScroll: 1
-		      }
-		    }
-		  
-  		]
+			{
+				breakpoint: 1024,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+					infinite: true,
+					dots: true
+				}
+			},
+			{
+				breakpoint: 900,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}, {
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+
+		]
 	});
 
 
@@ -172,25 +172,25 @@
 	// Counter
 
 	$('.counter-stat span').counterUp({
-	      delay: 10,
-	      time: 1000
-	  });
+		delay: 10,
+		time: 1000
+	});
 
-		
- // Shuffle js filter and masonry
-    var Shuffle = window.Shuffle;
-    var jQuery = window.jQuery;
 
-    var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
-        itemSelector: '.shuffle-item',
-        buffer: 1
-    });
+	// Shuffle js filter and masonry
+	var Shuffle = window.Shuffle;
+	var jQuery = window.jQuery;
 
-    jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
-        var input = evt.currentTarget;
-        if (input.checked) {
-            myShuffle.filter(input.value);
-        }
-    });
+	var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
+		itemSelector: '.shuffle-item',
+		buffer: 1
+	});
+
+	jQuery('input[name="shuffle-filter"]').on('change', function (evt) {
+		var input = evt.currentTarget;
+		if (input.checked) {
+			myShuffle.filter(input.value);
+		}
+	});
 
 })(jQuery);
